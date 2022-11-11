@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>game</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+
+      #pingStats {
+        position: absolute;
+        top: 60px;
+        left: 4px;
+        width: 400px;
+        height: 400px;
+        pointer-events: none;
+        color: white;
+        font-family: monospace;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.146.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.146.0/examples/jsm/",
+          "dat.gui": "https://unpkg.com/dat.gui@0.7.7/build/dat.gui.module.js"
+        }
+      }
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+
+  <body>
+    <div id="pingStats"></div>
+    <script type="module" src="Client.js"></script>
+  </body>
+</html>
