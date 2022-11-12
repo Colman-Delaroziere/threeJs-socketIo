@@ -1,24 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>game</title>
-    <style>
-      body {
-        overflow: hidden;
-        margin: 0px;
-      }
-
-      #pingStats {
-        position: absolute;
-        top: 60px;
-        left: 4px;
-        width: 400px;
-        height: 400px;
-        pointer-events: none;
-        color: white;
-        font-family: monospace;
-      }
-    </style>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="/socket.io/socket.io.js"></script>
     <script type="importmap">
       {
         "imports": {
@@ -28,11 +13,14 @@
         }
       }
     </script>
-    <script src="/socket.io/socket.io.js"></script>
-  </head>
+    <script src="/client.js" type="module"></script>
 
-  <body>
-    <div id="pingStats"></div>
-    <script type="module" src="Client.js"></script>
-  </body>
+    <style>
+      body {
+        margin: 0px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body></body>
 </html>
